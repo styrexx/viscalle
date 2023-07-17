@@ -33,6 +33,7 @@ Users should be able to:
 
 - The Nave bare
 ![](./asset/nave-page.png)
+![](./asset/nave-vid.webm)
 
 ## My process
 
