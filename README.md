@@ -1,4 +1,4 @@
-# Design Company [Viscalle] 
+# Digital Agnecy [Viscalle] 
 
 Transforme design to a responsive webpage with HTML, CSS and JavaScript.
 
