@@ -130,6 +130,7 @@ a {
   transition: 1s;
   gap: 80px;
   color: var(--sec-color);
+  display: none;
   transform: translateX(100%);
 }
 .header .container .navBar .navBar-body {
@@ -300,7 +301,7 @@ a {
 }
 .transforme-section .container .transforme-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   margin-bottom: 20px;
 }

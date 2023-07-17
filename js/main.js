@@ -6,11 +6,17 @@ navIcone.onclick = getNav;
 let getnvstart = true;
 function getNav() {
   if (getnvstart) {
-    navBar.style.transform = "translateX(0)";
-    navIcone.innerHTML = `<i class="fa-solid fa-xmark i-red"></i>`;
-    document.body.style.overflowY = "hidden";
-    getnvstart = false;
+    navBar.style.display = "flex";
+    setTimeout(() => {
+      navBar.style.transform = "translateX(0)";
+      navIcone.innerHTML = `<i class="fa-solid fa-xmark i-red"></i>`;
+      document.body.style.overflowY = "hidden";
+      getnvstart = false;
+    }, 100);
   } else {
+    setTimeout(() => {
+      navBar.style.display = "none";
+    }, 1000);
     navBar.style.transform = "translateX(100%)";
     navIcone.innerHTML = `<i class="fa-solid fa-bars i-red"></i>`;
     document.body.style.overflowY = "auto";
@@ -21,6 +27,9 @@ navBar.onclick = function () {
   if (navBar.style.transform == "translateX(0px)") {
     navBar.style.transform = "translateX(100%)";
     navIcone.innerHTML = `<i class="fa-solid fa-bars i-red"></i>`;
+    setTimeout(() => {
+      navBar.style.display = "none";
+    }, 1000);
     document.body.style.overflowY = "auto";
     getnvstart = true;
   }
