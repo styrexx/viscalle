@@ -10,9 +10,9 @@ function getNav() {
     setTimeout(() => {
       navBar.style.transform = "translateX(0)";
       navIcone.innerHTML = `<i class="fa-solid fa-xmark i-red"></i>`;
-      document.body.style.overflowY = "hidden";
       getnvstart = false;
     }, 100);
+    document.body.style.overflowY = "hidden";
   } else {
     setTimeout(() => {
       navBar.style.display = "none";
